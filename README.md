@@ -172,42 +172,33 @@ python3 password_generator.py
 4. Click the green **Run** button.
 5. Enter the number of letters, symbols, and numbers when prompted.
 
-## 📄 Source Code
 
-```python
-import random
+## 🌐 Run Online on Replit
 
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-           'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
-           'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
-           'Z']
-numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+You can also run this project online using Replit without installing Python on your computer.
 
-print("Welcome to the PyPassword Generator!")
-number_of_letters = int(input("How many letters would you like in your password?\n"))
-number_of_symbols = int(input("How many symbols would you like?\n"))
-number_of_numbers = int(input("How many numbers would you like?\n"))
+🔗 **Replit Link:** (https://replit.com/@numair1919/PyPassword-Generator)
 
-password_list = []
+### ▶️ How to Run on Replit
 
-for letter in range(1, number_of_letters + 1):
-    password_list.append(random.choice(letters))
+1. Open the Replit project link.
+2. Click the **Run** button at the top.
+3. The program will start in the Replit console.
+4. Enter how many letters, symbols, and numbers you want in your password.
+5. The generator will create and display a random shuffled password.
 
-for symbol in range(1, number_of_symbols + 1):
-    password_list.append(random.choice(symbols))
 
-for number in range(1, number_of_numbers + 1):
-    password_list.append(random.choice(numbers))
+Example:
 
-random.shuffle(password_list)
-
-password = ""
-for character in password_list:
-    password += character
-
-print("Here is your password: " + password)
-```
+```text
+Welcome to the PyPassword Generator!
+How many letters would you like in your password?
+5
+How many symbols would you like?
+2
+How many numbers would you like?
+3
+Here is your password: G7#aQ2d9+
 
 ## 🧠 Key Python Concepts
 
